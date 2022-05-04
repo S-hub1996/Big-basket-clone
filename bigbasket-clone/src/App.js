@@ -5,6 +5,8 @@ function App() {
     <div className="App">
       {/* <h1>hello</h1> */}
       <Header/>
+
+
       <Footer/>
     </div>
   );
