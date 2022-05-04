@@ -1,9 +1,10 @@
 import React,{ useState} from "react";
-import { useDispatch, useSelector } from "react-redux";
+// import { useDispatch, useSelector } from "react-redux";
 import { Nav } from "../Header/HeaderElement";
 // import { Link } from "react-router-dom";
 import { ArrowDown } from "../Header/HeaderElement";
-import { Shop, ShopByCategory } from "./ShopByCategory";
+// import { Shop } from "./ShopByCategory";
+import {  ShopByCategory } from "./ShopByCategory";
 const Header = () => {
     const [sidebar, setSidebar] = useState(false);
     // const { data } = useSelector((state) => state.user);
@@ -16,7 +17,7 @@ const Header = () => {
           </div>
              {/* <div className="shop-on-scroll">
                 <Shop />
-            </div>
+            </div> */}
             <ul className="nav-top">
                      <li className="telephone">
               <i></i>
@@ -25,11 +26,11 @@ const Header = () => {
             <li className="location">
               <i></i>
               <span>
-                {data.location.pincode}, {data.location.city}
+                {/* {data.location.pincode}, {data.location.city} */}
               </span>
               <ArrowDown top="-3px" color="#4a4a4a" />
             </li>
-            </ul> */}
+            </ul>
               <div className="search-bar big-screen">
                 <input
                   type="text"
