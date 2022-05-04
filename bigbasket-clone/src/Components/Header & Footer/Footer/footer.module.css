@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
-
+.summary{ 
+    width:90%;
+    border: 1px solid gray;
+    margin:auto;
+    padding:1%;
+}
 .footer{
     margin-top: 40px;
     font-family: 'Roboto Condensed', sans-serif;
