@@ -12,7 +12,6 @@ import {
 // add your reducers here
 const rootReducer = combineReducers({
 // add here
-
 });
 
 // this is middle-ware
