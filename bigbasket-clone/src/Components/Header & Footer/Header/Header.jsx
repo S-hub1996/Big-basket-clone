@@ -1,18 +1,21 @@
-import React from 'react'
+import React from "react";
+import { Nav } from "../Header/HeaderElement";
+// import { Link } from "react-router-dom";
+
 
 const Header = () => {
   return (
-    <div>
-      <div className="header">
-      <p>header</p>
-        
-
-
-
-
+    <>
+      <div>
+        <Nav className="header">
+          <div className="big-basket-logo">
+            <i className="big-basket-logo"></i>
+          </div>
+          
+        </Nav>
       </div>
-     </div>
-  )
-}
+    </>
+  );
+};
 
-export default Header
+export default Header;

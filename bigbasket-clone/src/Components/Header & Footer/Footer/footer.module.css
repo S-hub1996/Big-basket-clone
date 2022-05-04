@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+.footer{
+    margin-top: 40px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: gray;
+}
+
+.footer a{
+    text-decoration: none;
+    color: gray;
+}
+
+.footer h4{
+    color: #6cd138;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.footerSection1{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding: 10px 15px 5px;
+    border-bottom: 1px dotted #dedede;
+    font-size: 1rem;
+    word-wrap: none;
+}
+
+.badge{
+    max-width: 150px;
+    margin-top: 8px;
+    margin: 3px;
+}
+
+.socialbadge{
+    margin: 5px;
+    display: inline-block;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+
+.footerSection1 div{
+    width: 25%;
+}
+
+.footerSection1 li{
+    padding: 5px 0;
+    list-style: none;
+}
+
+.footerSection2{
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.footerSection2 h4{
+    font-size: 14px;
+}
+
+.footerSection2 >div{
+    padding: 3px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 2fr 9fr;
+}
+
+.footerSection2 p{
+    display: inline-block;
+}
+
+.paymentVisa{
+    width: 64px;
+}
+.paymentMaster{
+    width: 64px;
+    margin-bottom: 12px;
+    margin-left: 10px;
+}
+.paymentPaytm{
+    width: 80px;
+    margin-bottom: 21px;
+    margin-left: 10px;
+}
+.paymentMobi{
+    width: 85px;
+    margin-bottom: 21px;
+    margin-left: 10px;
+}
+.paymentRupay{
+    width: 90px;
+    margin-bottom: 19px;
+    margin-left: 10px;
+}
+.paymentAmerican{
+    width: 70px;
+    margin-bottom: 19px;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 990px){
+    .footerSection1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "a d"
+                             "b e"
+                             "c e";
+        width: 80%;
+        text-align: left;
+        padding: 10px 15px 5px;
+        border-bottom: 1px dotted #dedede;
+    }
+
+    .footerSection1 div:first-child{
+        grid-area: a;
+        margin-bottom: 10px;
+    }
+
+    .footerSection1 div:nth-child(2){
+        grid-area: d;
+    }
+
+    .footerSection1 div:nth-child(3){
+        grid-area: b;
+        margin-bottom: 10px;
+    }
+
+    .footerSection1 div:nth-child(3)>ul,.footerSection1 div:last-child>ul li{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footerSection1 div:last-child{
+        grid-area: c;
+    }
+
+    .footerSection2 >div{
+        padding: 3px;
+        text-align: left;
+        display: grid;
+        grid-template-columns: auto;
+        margin-bottom: 5px;
+    }
+}
