@@ -1,5 +1,15 @@
 import styled from "styled-components";
 
+export const Error = styled.div`
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+`;
+
+
 export const ArrowDown = styled.div`
   width: 8px;
   height: 8px;

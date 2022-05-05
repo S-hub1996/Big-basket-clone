@@ -3,9 +3,10 @@ import React,{ useState} from "react";
 import { Nav } from "../Header/HeaderElement";
 // import { Link } from "react-router-dom";
 import { ArrowDown } from "../Header/HeaderElement";
-// import { Shop } from "./ShopByCategory";
+import { Shop } from "./ShopByCategory";
 import {  ShopByCategory } from "./ShopByCategory";
-const Header = () => {
+import { Link } from "react-router-dom";
+export const Header = () => {
     const [sidebar, setSidebar] = useState(false);
     // const { data } = useSelector((state) => state.user);
   return (
@@ -13,7 +14,9 @@ const Header = () => {
       <div>
         <Nav className="nav-sticky">
           <div className="big-basket-logo">
-            <i className="big-basket-logo"></i>
+          <Link to="/big-basket">
+                  <i className="big-basket-logo"></i>
+                </Link>
           </div>
              {/* <div className="shop-on-scroll">
                 <Shop />
@@ -58,4 +61,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+
