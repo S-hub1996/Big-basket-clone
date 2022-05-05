@@ -1,0 +1,8 @@
+.slider {
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+.mainImg {
+    transition: all 500ms;
+}

@@ -1,13 +1,15 @@
 import Header from "./Components/Header & Footer/Header/Header";
 import { Footer } from "./Components/Header & Footer/Footer/Footer";
+import { Home } from "./Components/Home/Home";
+
+
 function App() {
   return (
     <div className="App">
-      {/* <h1>hello</h1> */}
-      <Header/>
+      <Header />
+      <Home />
 
-
-      <Footer/>
+      <Footer />
     </div>
   );
 }
