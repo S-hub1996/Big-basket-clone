@@ -1,6 +1,7 @@
 import React from "react";
 
-import { OffSection } from "../styledcomponents/Elements";
+import { OffSection, ArrowDown } from "../styledcomponents/Elements";
+import {ButtonSlider} from "../Slider/Buttonslider"
 
 export const Offers = () => {
   return (
@@ -373,6 +374,10 @@ export const Offers = () => {
         </div>
       </div>
 
+      <div className="slideshow">
+         <h1>slideshow</h1>
+      </div>
+
       <h2>Brand Store</h2>
       <div className="sixelements">
         <div className="sixbox">
@@ -412,6 +417,12 @@ export const Offers = () => {
           />
         </div>
       </div>
+      
+      <ButtonSlider imges={["https://www.bigbasket.com/media/uploads/banner_images/hp_m_babycare_250422_400.jpg",
+    "https://www.bigbasket.com/media/uploads/banner_images/hp_cmc_m_tataneu_400_100422.jpg",
+    "https://www.bigbasket.com/media/uploads/banner_images/hp_m_petstore_250422_400.jpg",
+    "https://www.bigbasket.com/media/uploads/banner_images/hp_m_bcd_250422_400.jpg",
+    "https://www.bigbasket.com/media/uploads/banner_images/hp_m_health_suppliment_250422_400.jpg"]}/>
     </OffSection>
   );
 };

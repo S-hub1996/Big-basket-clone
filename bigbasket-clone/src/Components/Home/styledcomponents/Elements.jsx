@@ -1,5 +1,16 @@
 import styled from "styled-components";
 
+export const ArrowDown = styled.div`
+  width: 8px;
+  height: 8px;
+  position: relative;
+  top: ${(props) => props.top};
+  margin-left: 8px;
+  border: solid ${(props) => props.color};
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg);
+  transition: all 0.2s ease-out;
+`;
 
 export const OffSection = styled.section`
 .contouter{
@@ -112,5 +123,12 @@ h2 {
 .sixbox:hover{
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;  
     
+}
+
+.slideshow{
+    border: 1px solid black;
+    width:85%;
+    margin: auto;
+
 }
 `
