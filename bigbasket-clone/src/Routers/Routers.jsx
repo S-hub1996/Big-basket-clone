@@ -5,11 +5,16 @@ import { Error } from "../Components/Header & Footer/Header/HeaderElement";
 // import CategoryWiseProducts from "../Pages/CategoryWiseProducts";
 // import { Checkout } from "../Pages/Checkout";
 import { Home } from "../Components/Home/Home";
+impot 
 
 export const Routers = () => {
   return (
     <>
       <Routes>
+          
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/logged-in" element={<LoggedIn />} />
         <Route path="/" element={<Home />} />
         <Route path="/big-basket" element={<Home />} />
         {/* <Route path="/cl/:category" element={<CategoryWiseProducts />} /> */}
