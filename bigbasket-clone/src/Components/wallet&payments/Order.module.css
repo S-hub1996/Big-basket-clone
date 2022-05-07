@@ -1,0 +1,36 @@
+.maincont>p{
+    font-weight: 700;
+
+}
+.maincont>div{
+    background-color:hsl(0,0%,95%);
+    padding:20px;
+
+}
+.maincont>div>div>div{
+    display:flex;
+    justify-content:space-between;
+    width:300px;
+    padding:10px 10px;
+    border-bottom: 1px solid rgb(0,0,0,0.15);
+    align-items: center;
+    font-family: sans-serif;
+    
+}
+.maincont>div>div>div:nth-child(2){
+    border:none;
+}
+.maincont>div>div>div:nth-child(2)>p{
+font-weight:600;
+
+}
+
+.maincont>div>div{
+   border: 1px solid rgb(0,0,0,0.15);
+}
+.insidecontainer>div:first-child>p{
+    
+    color: rgb(0,0,0,0.7);
+    font-size:15px;
+    word-spacing: 10px;
+}

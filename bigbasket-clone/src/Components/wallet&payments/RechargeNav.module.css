@@ -1,0 +1,15 @@
+.RechargeNav {
+  display: flex;
+  padding: 0px 100px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  
+}
+.RechargeNav > h5 {
+  color: grey;
+}
+.RechargeNav > img {
+  width: 180px;
+  height: 100px;
+}
