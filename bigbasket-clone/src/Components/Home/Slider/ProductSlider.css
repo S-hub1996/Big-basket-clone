@@ -1,6 +1,6 @@
 #mslidercontainer {
   width: 85%;
-  height: 250px;
+  height: auto;
   /* background-color: #f2f2f2; */
   position: relative;
   display: flex;
@@ -35,9 +35,14 @@
 }
 
 .slidercard {
-    width: 200px;
-    height:90%;
-    background: yellow;
+    width: 250px;
+    height:auto;
+    /* background: yellow; */
     display: inline-block;
     margin: 5px;
 }
+
+.slidercard:hover{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }

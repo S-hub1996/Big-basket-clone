@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import React from "react";
-import {store} from "../src/Redux/store";
+// import store from "./store";
 import axios from "axios";
 
 const AppContext = React.createContext();
