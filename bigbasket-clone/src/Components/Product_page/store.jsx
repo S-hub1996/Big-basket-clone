@@ -1,4 +1,4 @@
-var FruitVeg = [
+var fruitVeg = [
   {
     id: 110,
     quantity:0,
@@ -266,3 +266,4 @@ var FruitVeg = [
       "https://www.bigbasket.com/media/uploads/p/mm/10000166_16-fresho-radish-white.jpg",
   },
 ];
+  export default  fruitVeg ;

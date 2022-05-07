@@ -225,3 +225,4 @@ var foodOilAndMasala = [
       "https://www.bigbasket.com/media/uploads/p/mm/1211909_1-bb-royal-basmati-rice-rozana-premium.jpg",
   },
 ];
+  export default foodOilAndMasala;

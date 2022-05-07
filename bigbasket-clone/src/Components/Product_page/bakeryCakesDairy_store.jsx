@@ -216,3 +216,4 @@ var bakeryCakesDairy = [
    "https://www.bigbasket.com/media/uploads/p/mm/312568_18-britannia-toastea-premium-bake-rusk-with-goodness-of-elaichi-sooji-wheat.jpg",
 },
 ];
+export default bakeryCakesDairy;

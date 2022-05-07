@@ -185,3 +185,4 @@ var cleaningHousehold = [
       "https://www.bigbasket.com/media/uploads/p/s/1212117_3-bb-home-garbage-bags-oxo-biodegradable-medium-green-19x21-inches.jpg",
   },
 ];
+export default cleaningHousehold;

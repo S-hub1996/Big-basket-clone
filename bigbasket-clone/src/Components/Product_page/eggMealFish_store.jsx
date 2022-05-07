@@ -155,3 +155,4 @@ var eggMealFish = [
       "https://www.bigbasket.com/media/uploads/p/mm/10000912_9-fresho-chicken-leg-without-skin-antibiotic-residue-free-3-4-pcs.jpg",
   },
 ];
+  export default eggMealFish;

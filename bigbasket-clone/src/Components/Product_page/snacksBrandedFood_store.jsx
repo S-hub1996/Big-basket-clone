@@ -212,3 +212,4 @@ var snacksBrandedFood = [
       "https://www.bigbasket.com/media/uploads/p/mm/1202647_3-sunfeast-dark-fantasy-choco-fills.jpg",
   },
 ];
+export default snacksBrandedFood;
