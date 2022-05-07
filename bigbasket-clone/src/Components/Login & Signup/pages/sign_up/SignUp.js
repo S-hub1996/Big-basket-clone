@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./sign_up_login.css";
-import { useGlobalContext } from "../../contextAPI";
+import { useGlobalContext } from "../../../../contextAPI";
 import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
