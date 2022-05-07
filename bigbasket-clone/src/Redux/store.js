@@ -9,10 +9,10 @@ import {
 import {WalletReducer} from "../Components/wallet&payments/Reducer/walletReducer"
 
 
+
 // add your reducers here
 const rootReducer = combineReducers({
-// add here
-  WalletReducer
+// add here  login : 
 });
 
 // this is middle-ware

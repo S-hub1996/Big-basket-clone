@@ -1,7 +1,8 @@
 import React from "react";
 
 import { OffSection, ArrowDown } from "../styledcomponents/Elements";
-import {ButtonSlider} from "../Slider/Buttonslider"
+import { ButtonSlider } from "../Slider/Buttonslider";
+import { ProductSlider } from "../Slider/ProductSlider";
 
 export const Offers = () => {
   return (
@@ -46,6 +47,10 @@ export const Offers = () => {
           </div>
         </div>
       </div>
+
+      <h2>My Smart basket</h2>
+      <ProductSlider />
+
       <h2>Bank Offers</h2>
       <div className="payment">
         <div className="paymentin">
@@ -73,6 +78,10 @@ export const Offers = () => {
           />
         </div>
       </div>
+
+      <h2>Best Seller</h2>
+      <ProductSlider />
+      
       <h2>Most Popular</h2>
       <div className="payment">
         <div className="paymentin">
@@ -374,11 +383,15 @@ export const Offers = () => {
         </div>
       </div>
 
-      <ButtonSlider imges={["https://www.bigbasket.com/media/uploads/banner_images/hp_m_babycare_250422_400.jpg",
-    "https://www.bigbasket.com/media/uploads/banner_images/hp_cmc_m_tataneu_400_100422.jpg",
-    "https://www.bigbasket.com/media/uploads/banner_images/hp_m_petstore_250422_400.jpg",
-    "https://www.bigbasket.com/media/uploads/banner_images/hp_m_bcd_250422_400.jpg",
-    "https://www.bigbasket.com/media/uploads/banner_images/hp_m_health_suppliment_250422_400.jpg"]}/>
+      <ButtonSlider
+        imges={[
+          "https://www.bigbasket.com/media/uploads/banner_images/hp_m_babycare_250422_400.jpg",
+          "https://www.bigbasket.com/media/uploads/banner_images/hp_cmc_m_tataneu_400_100422.jpg",
+          "https://www.bigbasket.com/media/uploads/banner_images/hp_m_petstore_250422_400.jpg",
+          "https://www.bigbasket.com/media/uploads/banner_images/hp_m_bcd_250422_400.jpg",
+          "https://www.bigbasket.com/media/uploads/banner_images/hp_m_health_suppliment_250422_400.jpg",
+        ]}
+      />
 
       <h2>Brand Store</h2>
       <div className="sixelements">
@@ -420,15 +433,15 @@ export const Offers = () => {
         </div>
       </div>
 
-      <ButtonSlider imges={[
-        "https://www.bigbasket.com/media/uploads/banner_images/hp_c_lauki_cxnp-9690_400_050522.jpg",
-        "https://www.bigbasket.com/media/uploads/banner_images/hp_c_shukto_cxnp-9692_400_050522.jpg",
-        "https://www.bigbasket.com/media/uploads/banner_images/hp_c_submit_cxnp-9687_400_050522.jpg",
-        "https://www.bigbasket.com/media/uploads/banner_images/hp_c_winner_cxnp-9688_400_050522.jpg",
-        "https://www.bigbasket.com/media/uploads/banner_images/hp_c_bhapa_cxnp-9689_400_050522.jpg"
-      ]}/>
-      
-      
+      <ButtonSlider
+        imges={[
+          "https://www.bigbasket.com/media/uploads/banner_images/hp_c_lauki_cxnp-9690_400_050522.jpg",
+          "https://www.bigbasket.com/media/uploads/banner_images/hp_c_shukto_cxnp-9692_400_050522.jpg",
+          "https://www.bigbasket.com/media/uploads/banner_images/hp_c_submit_cxnp-9687_400_050522.jpg",
+          "https://www.bigbasket.com/media/uploads/banner_images/hp_c_winner_cxnp-9688_400_050522.jpg",
+          "https://www.bigbasket.com/media/uploads/banner_images/hp_c_bhapa_cxnp-9689_400_050522.jpg",
+        ]}
+      />
     </OffSection>
   );
 };
