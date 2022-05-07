@@ -1,6 +1,14 @@
 import React from "react";
-
+import { useDispatch } from 'react-redux';
+import { ADD } from '../../Redux/CartCheckout/action/action';
 const Crd = (props) => {
+  const dispatch = useDispatch();
+
+
+  const send = (Props)=>{
+    // console.log(e);
+    dispatch(ADD(Props));
+  }
   return (
     <>
       <div className="saif">
@@ -21,6 +29,7 @@ const Crd = (props) => {
                 backgroundColor: "rgb(219, 219, 27)",
                 borderRadius: "11%",
               }}
+              onClick={()=> send(props)}
             >
               Add Cart
             </button>

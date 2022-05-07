@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 // import { SingleProduct } from "../Components/productPages/SingleProduct";
 import { Error } from "../Components/Header & Footer/Header/HeaderElement";
 import ProductAssemble from "../Components/Product_page/ProductAssemble"
-// import { Checkout } from "../Pages/Checkout";
+// import { Checkout } from '../Components/CartCheckout/page/Checkout';
 import { Home } from "../Components/Home/Home";
 import { SignIn } from "../Components/Login & Signup/Login/SignIn";
 import { Wallet } from "../Components/wallet&payments/wallet";
