@@ -10,11 +10,11 @@ const ProductAssemble = () => {
   return (
     <>
 {/* <Slide/> */}
-      <Ncard/> 
-      <Mcard/>
-      <Acard/>
-       <Bcard/>
-      <Ccard/>
+   
+    
+      
+       
+      
 
 
     </>
