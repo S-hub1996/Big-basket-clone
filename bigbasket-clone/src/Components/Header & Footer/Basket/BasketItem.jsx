@@ -6,7 +6,7 @@ import styles from "./basket.module.css";
 
 export const BasketItem = ({ item }) => {
   let dispatch = useDispatch();
-  const cart = useSelector((state) => state.cart.cart);
+//   const cart = useSelector((state) => state.cart.cart);
   let saving =
     item.quantity * item.product.mrp - item.quantity * item.product.price;
 

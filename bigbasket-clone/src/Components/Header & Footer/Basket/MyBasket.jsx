@@ -44,8 +44,8 @@ export const MyBasket = ({ loading, login, wrong, clearWrongLogin }) => {
         ref={popoverAnchor}
         aria-owns="mouse-over-popover"
         aria-haspopup="true"
-        onMouseEnter={popoverEnter}
-        onMouseLeave={popoverLeave}
+        // onMouseEnter={popoverEnter}
+        // onMouseLeave={popoverLeave}
       >
         <div className={styles.basketDiv}>
           <div className="basket" onClick={() => navigate("/checkout")}>
