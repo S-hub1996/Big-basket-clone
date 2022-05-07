@@ -29,15 +29,11 @@ const Crd = (props) => {
                 backgroundColor: "rgb(219, 219, 27)",
                 borderRadius: "11%",
               }}
-              onClick={()=> send(props)}
-            >
-              Add Cart
-            </button>
+              onClick={()=> send(props)}>Add Cart</button>
           </div>
         </div>
       </div>
     </>
   );
 };
-
 export default Crd;

@@ -266,4 +266,3 @@ var FruitVeg = [
       "https://www.bigbasket.com/media/uploads/p/mm/10000166_16-fresho-radish-white.jpg",
   },
 ];
-console.log(FruitVeg.length);
