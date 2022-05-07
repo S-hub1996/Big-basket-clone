@@ -11,7 +11,6 @@ const initialState = {
 export const WalletReducer = (state = initialState, action) => {
   switch (action.type) {
     case AddMoney: {
-      alert('yes it is')
       return {
         ...state,
         AddMoney: action.payload,
@@ -24,10 +23,11 @@ export const WalletReducer = (state = initialState, action) => {
       }
     }
     case PaymentConfirm: {
-      var total=state.Balance+action.payload
+      var total = state.Balance + action.payload
       return {
         ...state,
         Balance: total,
+        otp: false,
       }
     }
     case 'OtpVisible': {
