@@ -4,7 +4,8 @@ import {
   applyMiddleware,
   legacy_createStore as createStore,
 } from "redux";
-
+import { authReducer } from "./Auth/auth.reducer";
+import { userReducer } from "./User/user.reducer";
 // import reducers
 import {WalletReducer} from "../Components/wallet&payments/Reducer/walletReducer"
 
@@ -12,6 +13,8 @@ import {WalletReducer} from "../Components/wallet&payments/Reducer/walletReducer
 // add your reducers here
 const rootReducer = combineReducers({
 // add here
+user: userReducer,
+auth: authReducer,
   WalletReducer
 });
 
