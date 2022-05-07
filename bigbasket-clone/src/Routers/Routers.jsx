@@ -4,20 +4,32 @@ import { Route, Routes } from "react-router-dom";
 import { Error } from "../Components/Header & Footer/Header/HeaderElement";
 import ProductAssemble from "../Components/Product_page/ProductAssemble"
 // import { Checkout } from '../Components/CartCheckout/page/Checkout';
+
+// import { Checkout } from "../Pages/Checkout";
 import { Home } from "../Components/Home/Home";
 import { SignIn } from "../Components/Login & Signup/Login/SignIn";
 import { Wallet } from "../Components/wallet&payments/wallet";
 import {Recharge} from "../Components/wallet&payments/recharge"
+import { Ncard } from '../Components/Product_page/Ncard';
+import { Mcard } from '../Components/Product_page/Foodgrain_Ncard';
+import { Acard } from '../Components/Product_page/BakeryCakesDairy_Ncard';
+import { Bcard } from '../Components/Product_page/snacksBrandedFood_Ncard';
+import { Ccard } from '../Components/Product_page/eggMealFish_Ncard';
 
 export const Routers = () => {
   return (
     <>
       <Routes>
-          
+      
+        <Route path="/cl/fruits-vegetables/" element={<Ncard/>} />
+        <Route path="/cl/foodgrains-oil-masala/" element={<Mcard/>} />
+        <Route path="/cl/bakery-cakes-dairy/" element={<Acard/>} />
+        <Route path="/cl/snacks-branded-foods/" element={<Bcard/>} />
+        <Route path="/cl/eggs-meat-fish/" element={<Ccard/>} />
         <Route path="/SignIn" element={<SignIn />} />
         <Route path="/" element={<Home />} />
         <Route path="/big-basket" element={<Home />} />
-        <Route path="/cl/:category" element={<ProductAssemble/>} />
+
         <Route path="/cl/*" element={<Error>404 Not Found</Error>} />
         {/* <Route path="/:id" element={<SingleProduct />} /> */}
         {/* <Route path="/cl/:category/:id" element={<SingleProduct />} /> */}
