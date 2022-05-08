@@ -11,9 +11,9 @@ import {
 const initialState = {
   data: getValue("user")?.data || {
     id: "",
-    name: "Prashant Sharma",
+    name: "Masai School",
     location: {
-      city: "Bangalore",
+      city: "india",
       pincode: 560004,
     },
   },

@@ -36,7 +36,7 @@ export const CartReducer = (state = initialState,{type,payload}) =>{
         case SET_CART:{
             return {
                 ...state,
-                cart:payload
+                cart:[...state.cart,payload]
             }
         }
         default:{
