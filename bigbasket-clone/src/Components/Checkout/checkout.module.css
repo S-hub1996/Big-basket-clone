@@ -1,0 +1,19 @@
+.checkoutFirst{
+    width: 860px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    display:grid;
+    gap:20px;
+    margin-top: 50px;
+}
+.checkout{
+    display: flex;
+    gap:100px;
+}
+.second{
+    margin-top: 40px;
+}
+.rechargeDiv{
+    margin-left: 0px;
+    
+}

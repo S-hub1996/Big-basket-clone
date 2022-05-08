@@ -1,0 +1,41 @@
+.delivery {
+  display: flex;
+  justify-content: space-between;
+  gap:100px;
+  padding:5px 30px;
+  width:860px;
+  border: 1px solid rgb(0,0,0,0.3);
+  align-items: center;
+  
+}
+.delivery>div:first-child{
+    display: flex;
+    gap:10px;
+    align-items: center;
+    
+}
+.delivery>div:nth-child(2){
+    text-align: center;
+  margin-top:10px;
+  color:grey;
+  font-size: 12px;
+}
+.delivery>div:nth-child(2)>p{
+    width: 95%;
+    text-align: left;
+}
+
+.delivery>div:first-child>h5{
+   margin-top:8px;
+   font-size: 16px;
+}
+.delivery>div:last-child{
+    border: 1px solid rgb(0,0,0,0.3);
+    padding:7px 40px;
+    font-size:12px;
+    cursor:pointer;
+    border-radius: 5px;
+}
+.addressP>span{
+  margin: 5px;
+}

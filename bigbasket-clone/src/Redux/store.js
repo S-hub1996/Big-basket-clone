@@ -9,11 +9,14 @@ import { userReducer } from "./User/user.reducer";
 import { cartreducer } from "./CartCheckout/reducers/reducer";
 // import reducers
 import {WalletReducer} from "../Components/wallet&payments/Reducer/walletReducer"
-
+import { CheckoutReducer } from "../Components/Checkout/paymentOptions/Reducer/CheckoutReducer";
 
 
 // add your reducers here
 const rootReducer = combineReducers({
+// add here  login : 
+  WalletReducer,
+  CheckoutReducer,
 // add here
 carts: cartreducer,
 user: userReducer,

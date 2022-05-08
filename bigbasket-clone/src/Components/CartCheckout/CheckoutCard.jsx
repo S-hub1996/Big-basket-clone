@@ -79,7 +79,7 @@ export const CheckoutCards = () => {
             <div className={styles.buttonSection}>
               <div>
                 <button className={styles.checkoutButton} 
-                onclick ={()=>navigate("/checkout")}>
+                onClick ={()=>navigate("/checkout")}>
                   <p>CHECKOUT</p> <span></span>
                 </button>
               </div>

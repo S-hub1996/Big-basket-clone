@@ -1,0 +1,136 @@
+.Voucher>p{
+   font-size:18px;
+}
+.inputDiv{
+    display:flex;
+    background-color: white;
+    padding:0px 5px;
+    padding-right:0px;
+    border-radius: 0px;
+    width: fit-content;
+    height:fit-content;
+    margin: auto;
+}
+.inputDiv>input{
+    border:none;
+    outline: none;
+    font-size: 18px;
+}
+.Voucher>div{
+    background-color: hsl(0,0%,94%);
+    padding:20px;
+    width:fit-content;
+    height:fit-content;
+}
+.inputDiv>button{
+    border:none;
+   height:40px;
+   width:80px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+border-radius: 5px;
+}
+.info{
+    
+    display: flex;
+}
+.info>.circle{
+    width: 50px;
+    height:20px;
+    background-color: hsl(0,0%,94%);
+    border-radius:50%;
+    position: relative;
+    top:21px;
+    
+}
+.note{
+background-color:hsl(216,100%,90%);
+    padding: 10px 20px;
+    display:flex;
+    align-items: center;
+    margin: auto;
+    margin-top:10px;
+    font-size:14px;
+    width: 200%;
+    justify-content:center;
+
+    
+    
+}
+.note>p{
+    margin: 0px;
+    text-align: center;
+    color: blue;
+    text-decoration: underline;
+    
+}
+.circle:first-child{
+    left:13px;   
+}
+.circle:last-child{
+    right:13px;
+}
+.summaryDiv>div>div{
+    display: flex;
+
+}
+.summaryDiv{
+    background-color: hsl(0,0%,94%);
+    padding:10px 30px;
+    width:fit-content;
+    height:fit-content;
+}
+.summaryDiv>div{
+    background-color:white;
+    padding:20px;
+    border:1px solid rgb(0,0,0,0.1);
+    width:300px
+}
+.basketValue{
+    display:flex;
+    justify-content:space-between;
+
+}
+.basketValue>p{
+    margin:0px;
+}
+.checkbox>div{
+    display:flex;
+    align-items: center;
+    gap:5px;
+}
+.checkbox>div>input{
+    margin-top:10px;
+    width:15px;
+    height:15px;
+}
+.checkbox{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.totalAmount{
+    display:flex;
+    justify-content:space-between;
+}
+.totalAmount>p{
+    margin:0px;
+}
+.totalMainDiv{
+    display:block !important;
+}
+.totalAmount+div{
+    display:flex;
+    justify-content:space-between;
+}
+.totalAmount+div>p{
+    margin:0px;
+}
+.summaryDiv p{
+    margin:0px;
+    margin-top: 10px;
+}
+.orderSummary{
+    margin-top:20px;
+
+}

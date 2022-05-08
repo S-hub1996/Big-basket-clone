@@ -1,0 +1,149 @@
+
+     
+      #toptitle {
+        display: flex;
+        width: 60%;
+        justify-content: space-between;
+        margin: auto;
+        margin-top: 20px;
+        color: gray;
+        font-weight: 800;
+      }
+      #toptitle > div > div {
+        margin: 0 auto;
+      }
+      .line {
+        width: 200px;
+        height: 5px;
+        border-bottom: 3px solid gray;
+        margin-top: 12px;
+      }
+      .two {
+        border-bottom: 3px solid gray;
+      }
+      #navbar1 {
+        background-color: black;
+      }
+      .same input{
+    display: block;
+    outline:none;
+    border: none;
+    overflow: hidden;
+   
+    
+}
+label{
+    display:block;
+    margin: 5px;
+    color:hsl(89,44%,20%);
+    font-weight: 100;
+    font-size:small;
+}
+.same{
+    margin: 10px;
+}
+.same div{
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+
+#adgridone{
+    display:grid;
+    grid-template-columns:150px 150px 300px;
+    gap:20px;
+}
+#adgridtwo{
+    display:grid;
+    grid-template-columns:300px 150px 150px;
+    gap:20px;
+}
+#adgridthree{
+    display:grid;
+    grid-template-columns:300px 300px;
+    gap:20px;
+}
+#adgridthree select{
+outline: none;
+width: 300px;
+border: none;    
+}
+#adgridfour{
+    display:grid;
+    grid-template-columns:300px 300px;
+    gap:20px;
+}
+
+#adtype{
+    display:flex;
+    align-items:center;
+    border-radius: 20px;
+    text-align:justify;
+    margin-left: 20px;
+}
+#adtype>label:hover{
+    background-color:hsl(89,44%,40%);
+    color:white;
+    font-weight:800;
+}
+
+.labelinp{
+    border:1px solid hsl(89,44%,33%);
+    padding:10px 40px;
+    margin: 0px;
+    color: rgb(0,0,0,0.5);
+    cursor: pointer;
+    transition: background 0.2;
+    font-weight: 800;
+    
+    
+}
+#lbone{
+   border-top-left-radius:8px ;
+   border-bottom-left-radius:8px ;
+}
+#lbthree{
+    border-top-right-radius:8px ;
+    border-bottom-right-radius:8px ;
+ }
+ h2:first-child{
+      /* text-align: center; */
+     /* width: 650px; */
+     color: gray;
+     font-weight:100;
+     font-size:medium;
+     padding:10px;
+     border-bottom:1px solid gray;
+ }
+ #addressdiv{
+     width: 70%;
+     display: grid;
+     border:1px solid gray;
+     padding-bottom: 20px;
+ }
+ #addresscont{
+     width:130%;
+     display: flex;
+     justify-content:space-between;
+     margin: 10px 0px;
+     margin-bottom: 100px;
+ }
+ #addressdiv>h2{
+     color: hsl(89,44%,23%);
+ }
+ .addAdress{
+     background-color: hsl(89,70%,50%);
+     margin-top: 30px;
+     width: 200px;
+     height: 50px;
+     border:none;
+     color:white;
+     font-weight: 600;
+     letter-spacing: 1px;
+     margin-right: 30px;
+     border-radius: 5px;
+     margin-left: auto;
+ }
+ .addresscont input{
+     width:250px !important;
+ }
+ 

@@ -6,9 +6,13 @@ const initialState = {
   PaymentOption: 'Card',
   AddMoney: 0,
   otp: false,
+  address: [],
+  changeAddress: false,
+  deliveroption: false,
+  payment: false,
 }
 
-export const WalletReducer = (state = initialState, action) => {
+export const CheckoutReducer = (state = initialState, action) => {
   switch (action.type) {
     case AddMoney: {
       return {
@@ -36,13 +40,32 @@ export const WalletReducer = (state = initialState, action) => {
         otp: action.payload,
       }
     }
-    case "useBalance": {
+    case 'addressAd': {
+      console.log('add', action.payload)
       return {
         ...state,
-        Balance:state.Balance-action.payload
+        address: [action.payload],
       }
     }
-      
+    case 'change': {
+      return {
+        ...state,
+        changeAddress: action.payload,
+      }
+    }
+    case 'deliveryoption': {
+      return {
+        ...state,
+        deliveryoption: action.payload,
+      }
+    }
+    case 'payment': {
+      return {
+        ...state,
+        payment: action.payload,
+      }
+    }
+
     default: {
       return {
         ...state,
