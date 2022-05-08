@@ -3,6 +3,7 @@ import Crd from './Crd'
 import "./Bigbasket.css"
 import cleaningHousehold from './snacksBrandedFood_store'
 import { Checkbox } from './Checkbox'
+import { Slider } from '../Home/Slider/UpperSlider'
 // import { useDispatch, useSelector } from 'react-redux'
 // import { sorted_data } from '../Redux/action'
 export const Bcard = () => {
@@ -32,6 +33,19 @@ export const Bcard = () => {
 
   return (
     <>
+    <div style={{width:"85%",margin:"auto"}} >
+    <Slider imgs={[
+                'https://www.bigbasket.com/media/uploads/banner_images/L2-YXPL509-1200x300-25thmar.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/L2-YXPL464-1200x300-25thmar.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/L2-YXPL469-1200x300-25thmar.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/L1_YXPL2228_1200x300_25thapril.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/L1_YXPL2152_1200x300_25thapril.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/L1-YXPL1594-1200x300-25thmar.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/l1p_cmc_m_tataneu_300_100422.jpg',
+                  'https://www.bigbasket.com/media/uploads/banner_images/L1_YXPL2228_1200x300_25thapril.jpg',
+                  
+            ]}/>
+    </div>
     <div style={{display:"grid", gridTemplateColumns:"20% 70%", gap:"20px"}}>
         <div className="sidebar_div">
           <Checkbox/>

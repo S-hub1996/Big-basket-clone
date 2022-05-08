@@ -3,6 +3,7 @@ import Crd from './Crd'
 import "./Bigbasket.css"
 import cleaningHousehold from './cleaningHousehold_store'
 import { Checkbox } from './Checkbox'
+import { Slider } from '../Home/Slider/UpperSlider'
 // import { useDispatch, useSelector } from 'react-redux'
 // import { sorted_data } from '../Redux/action'
 export const Dcard = () => {
@@ -32,6 +33,17 @@ export const Dcard = () => {
 
   return (
     <>
+    <div style={{width:"85%",margin:"auto"}}>
+    <Slider imgs={[
+                'https://www.bigbasket.com/media/uploads/banner_images/yxnp698_l1_c_bb-home-earth_300_240422.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/l1p_cmc_m_tataneu_300_100422.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/yxtt561_l1_duracell_300_010522.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/yxtt568_l1_eveready_300_010522.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/cxnp9836_l1_c&h_c_stationery_300_250422.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/yxnp972_l1_c&h_c_bb-exclusive-cleaning-access_300_250422.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/yxtt568_l1_eveready_300_010522.jpg',
+            ]}/>
+    </div>
     <div style={{display:"grid", gridTemplateColumns:"20% 70%", gap:"20px"}}>
         <div className="sidebar_div">
           <Checkbox/>

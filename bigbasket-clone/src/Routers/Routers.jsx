@@ -15,6 +15,7 @@ import { Mcard } from '../Components/Product_page/Foodgrain_Ncard';
 import { Acard } from '../Components/Product_page/BakeryCakesDairy_Ncard';
 import { Bcard } from '../Components/Product_page/snacksBrandedFood_Ncard';
 import { Ccard } from '../Components/Product_page/eggMealFish_Ncard';
+import { Dcard } from "../Components/Product_page/cleaningHousehold_Ncard";
 
 export const Routers = () => {
   return (
@@ -26,6 +27,7 @@ export const Routers = () => {
         <Route path="/cl/bakery-cakes-dairy/" element={<Acard/>} />
         <Route path="/cl/snacks-branded-foods/" element={<Bcard/>} />
         <Route path="/cl/eggs-meat-fish/" element={<Ccard/>} />
+        <Route path="/cl/cleaning-household/" element={<Dcard/>} />
         <Route path="/SignIn" element={<SignIn />} />
         <Route path="/" element={<Home />} />
         <Route path="/big-basket" element={<Home />} />
