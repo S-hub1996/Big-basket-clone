@@ -63,7 +63,7 @@ export const Header = () => {
                 </Link>
               </div>
               <div className="shop-on-scroll">
-                <Shop />
+                {/* <Shop /> */}
               </div>
               <div className="location">
                 <i></i>
