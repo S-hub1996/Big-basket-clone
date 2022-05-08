@@ -4,7 +4,9 @@ import {
   applyMiddleware,
   legacy_createStore as createStore,
 } from "redux";
-
+import { authReducer } from "./Auth/auth.reducer";
+import { userReducer } from "./User/user.reducer";
+import { cartreducer } from "./CartCheckout/reducers/reducer";
 // import reducers
 import {WalletReducer} from "../Components/wallet&payments/Reducer/walletReducer"
 import { CheckoutReducer } from "../Components/Checkout/paymentOptions/Reducer/CheckoutReducer";
@@ -14,7 +16,12 @@ import { CheckoutReducer } from "../Components/Checkout/paymentOptions/Reducer/C
 const rootReducer = combineReducers({
 // add here  login : 
   WalletReducer,
-  CheckoutReducer
+  CheckoutReducer,
+// add here
+carts: cartreducer,
+user: userReducer,
+auth: authReducer,
+  WalletReducer
 });
 
 // this is middle-ware

@@ -3,6 +3,7 @@ import Crd from './Crd'
 import "./Bigbasket.css"
 import bakeryCakesDairy from './bakeryCakesDairy_store'
 import { Checkbox } from './Checkbox'
+import { Slider } from '../Home/Slider/UpperSlider'
 // import { useDispatch, useSelector } from 'react-redux'
 // import { sorted_data } from '../Redux/action'
 export const Acard = () => {
@@ -32,6 +33,18 @@ export const Acard = () => {
 
   return (
     <>
+    <div style={{width:"85%",margin:"auto"}}>
+    <Slider imgs={[
+                'https://www.bigbasket.com/media/uploads/banner_images/L1_CXNP9371_1200x300_07Mar22.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/L2-YXPL464-1200x300-25thmar.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/L2-YXPL370-1200x300-25thmar.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/L2-YXPL381-1200x300-25thmar.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/l1p_cmc_m_tataneu_300_100422.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/L1_CXNP9374_1200x300_07Mar22.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/L1_CXNP9373_1200x300_07Mar22.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/L1_CXNP9372_1200x300_07Mar22.jpg',
+            ]}/>
+    </div>
     <div style={{display:"grid", gridTemplateColumns:"20% 70%", gap:"20px"}}>
         <div className="sidebar_div">
           <Checkbox/>

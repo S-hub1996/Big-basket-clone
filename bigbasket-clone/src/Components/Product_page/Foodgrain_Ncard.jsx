@@ -3,6 +3,7 @@ import Crd from './Crd'
 import "./Bigbasket.css"
 import foodOilAndMasala from './Foodgrain_Store'
 import { Checkbox } from './Checkbox'
+import { Slider } from '../Home/Slider/UpperSlider'
 // import { useDispatch, useSelector } from 'react-redux'
 // import { sorted_data } from '../Redux/action'
 export const Mcard = () => {
@@ -32,6 +33,19 @@ export const Mcard = () => {
 
   return (
     <>
+    <div style={{width:"85%",margin:"auto"}}>
+    <Slider imgs={[
+                'https://www.bigbasket.com/media/uploads/banner_images/YXNP350_1200x300_290322.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/YXNP316_1200x300_290322.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/YXNP492_1200x300_290322.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/YXNP333_1200x300_290322.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/YXPL3231_25thapril.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/l1p_cmc_m_tataneu_300_100422.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/YXTT485_1200x300_230422.jpg',
+                  'https://www.bigbasket.com/media/uploads/banner_images/YXPL3093_YXPL3095_YXPL3096_YXPL3103_YXPL3117_300_250422.jpg',
+                  'https://www.bigbasket.com/media/uploads/banner_images/YXPL3093_YXPL3095_YXPL3096_YXPL3103_YXPL3117_300_250422.jpg'
+            ]}/>
+    </div>
     <div style={{display:"grid", gridTemplateColumns:"20% 70%", gap:"20px"}}>
         <div className="sidebar_div">
           <Checkbox/>

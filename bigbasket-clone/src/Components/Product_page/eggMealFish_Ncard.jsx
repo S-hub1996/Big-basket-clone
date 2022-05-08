@@ -3,6 +3,7 @@ import Crd from './Crd'
 import "./Bigbasket.css"
 import eggMealFish from './eggMealFish_store'
 import { Checkbox } from './Checkbox'
+import { Slider } from '../Home/Slider/UpperSlider'
 // import { useDispatch, useSelector } from 'react-redux'
 // import { sorted_data } from '../Redux/action'
 export const Ccard = () => {
@@ -32,6 +33,18 @@ export const Ccard = () => {
 
   return (
     <>
+    <div style={{width:"85%",margin:"auto"}}>
+    <Slider imgs={[
+                'https://www.bigbasket.com/media/uploads/banner_images/l1_EMF_M_Weekdayblore_300_060522.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/l1p_cmc_m_tataneu_300_100422.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/l1-certificate-top-300621.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/L1_CXNP445_1200X300_16THAPR21.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/CXNP342_Fresh_Meat_1200x300_7thApr.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/CXNP340_Egg_1200x300_7thApr.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/CXNP346_Fresh_Meat_1200x300_6thApr.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/CXNP344_Fresh_Meat_1200x300_6thApr.jpg',
+            ]}/>
+    </div>
     <div style={{display:"grid", gridTemplateColumns:"20% 70%", gap:"20px"}}>
         <div className="sidebar_div">
           <Checkbox/>

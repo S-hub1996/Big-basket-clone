@@ -3,6 +3,7 @@ import Crd from './Crd'
 import "./Bigbasket.css"
 import fruitVeg from './store'
 import { Checkbox } from './Checkbox'
+import { Slider } from '../Home/Slider/UpperSlider'
 // import { useDispatch, useSelector } from 'react-redux'
 // import { sorted_data } from '../Redux/action'
 export const Ncard = () => {
@@ -32,6 +33,20 @@ export const Ncard = () => {
 
   return (
     <>
+    <div>
+    <Slider imgs={[
+                'https://www.bigbasket.com/media/uploads/banner_images/CXNP9510_1200x300_110322.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/CXNP9507_1200x300_110322.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/YXNP641_1200x300_130422.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/l1p_cmc_m_tataneu_300_100422.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/CXNP9519_1200x300_160322.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/L1-YXNP1196-1200X300-7thMAY22.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/L1-YXNP641-1200X300-7thAPR22.jpg',
+                'https://www.bigbasket.com/media/uploads/banner_images/CXNP9513_1200x300_110322.jpg',
+            ]}/>
+
+
+    </div>
     <div style={{display:"grid", gridTemplateColumns:"20% 70%", gap:"20px"}}>
         <div className="sidebar_div">
           <Checkbox/>
@@ -49,7 +64,7 @@ export const Ncard = () => {
         <div className='main'>
     {fruitVeg.map((val)=>{
       return(
-        <Crd key={val.id} OFF={val.OFF}  QtyPiece={val.QtyPiece} QtyPieceForOneElement={val.QtyPieceForOneElement} productName={val.productName}  productprice={val.productprice} StrikePrice={val.StrikePrice} Brand={val.Brand} Date={val.Date} image={val.image}  />
+        <Crd id={val.id} OFF={val.OFF}  QtyPiece={val.QtyPiece} QtyPieceForOneElement={val.QtyPieceForOneElement} productName={val.productName}  productprice={val.productprice} StrikePrice={val.StrikePrice} Brand={val.Brand} Date={val.Date} image={val.image} quantity={val.quantity} />
       )
     })
 
