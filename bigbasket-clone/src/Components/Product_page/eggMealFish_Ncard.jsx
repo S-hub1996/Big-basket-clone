@@ -33,7 +33,7 @@ export const Ccard = () => {
 
   return (
     <>
-    <div style={{width:"85%",margin:"auto"}}>
+    <div style={{width:"77%",margin:"auto"}}>
     <Slider imgs={[
                 'https://www.bigbasket.com/media/uploads/banner_images/l1_EMF_M_Weekdayblore_300_060522.jpg',
                 'https://www.bigbasket.com/media/uploads/banner_images/l1p_cmc_m_tataneu_300_100422.jpg',
@@ -45,7 +45,7 @@ export const Ccard = () => {
                 'https://www.bigbasket.com/media/uploads/banner_images/CXNP344_Fresh_Meat_1200x300_6thApr.jpg',
             ]}/>
     </div>
-    <div style={{display:"grid", gridTemplateColumns:"20% 70%", gap:"20px"}}>
+    <div style={{display:"grid", gridTemplateColumns:"30% 68%"}}>
         <div className="sidebar_div">
           <Checkbox/>
         </div>

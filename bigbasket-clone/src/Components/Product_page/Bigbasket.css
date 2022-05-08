@@ -6,8 +6,8 @@ body{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .main{
-  /* justify-content:center; */
-  /* width: 70%; */
+  justify-content:center;
+  width: 85%;
   display: grid;
   grid-template-columns:repeat(4,25%);
   gap: 10px;
@@ -26,7 +26,7 @@ body{
 }
 .card_img{
   /* width: 50%; */
-  height: 450px;
+  height: 480px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   /* border: 1px solid brown; */
@@ -38,9 +38,10 @@ body{
 }
 .card_info{
   /* width: 50%; */
-  height: 155px;
+  height: 180px;
   background-color: rgb(225, 221, 221);
   /* border: 2px solid greenyellow; */
+  margin-bottom: 150px;
 }
 .box_scroll{
   height: 150px;

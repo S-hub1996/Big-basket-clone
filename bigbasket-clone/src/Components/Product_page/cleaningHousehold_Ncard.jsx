@@ -33,7 +33,7 @@ export const Dcard = () => {
 
   return (
     <>
-    <div style={{width:"85%",margin:"auto"}}>
+    <div style={{width:"77%",margin:"auto"}}>
     <Slider imgs={[
                 'https://www.bigbasket.com/media/uploads/banner_images/yxnp698_l1_c_bb-home-earth_300_240422.jpg',
                 'https://www.bigbasket.com/media/uploads/banner_images/l1p_cmc_m_tataneu_300_100422.jpg',
@@ -44,7 +44,7 @@ export const Dcard = () => {
                 'https://www.bigbasket.com/media/uploads/banner_images/yxtt568_l1_eveready_300_010522.jpg',
             ]}/>
     </div>
-    <div style={{display:"grid", gridTemplateColumns:"20% 70%", gap:"20px"}}>
+    <div style={{display:"grid", gridTemplateColumns:"30% 68%"}}>
         <div className="sidebar_div">
           <Checkbox/>
         </div>
