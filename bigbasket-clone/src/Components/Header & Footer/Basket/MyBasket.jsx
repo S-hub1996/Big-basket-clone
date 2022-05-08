@@ -25,7 +25,7 @@ const useStyles = createTheme((theme) => ({
 export const MyBasket = ({ loading, login, wrong, clearWrongLogin }) => {
   const [openedPopover, setOpenedPopover] = useState(false);
   const popoverAnchor = useRef(null);
-//   const cart = useSelector((state) => state.cart.cart.length);
+  const cart = useSelector((state) => state.carts.carts.length);
   const navigate = useNavigate();
 
   const popoverEnter = ({ currentTarget }) => {
@@ -56,7 +56,7 @@ export const MyBasket = ({ loading, login, wrong, clearWrongLogin }) => {
             <div>
               <span className="my-basket">My Basket</span>
               <span className="cart-value">
-                no.
+                {cart}
                 <span>items</span>
               </span>
             </div>

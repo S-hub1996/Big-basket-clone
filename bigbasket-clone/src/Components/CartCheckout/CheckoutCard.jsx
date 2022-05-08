@@ -1,32 +1,43 @@
-import React from 'react';
+import React,{useState, useEffect} from 'react';
 import { MdSavings } from 'react-icons/md';
-import { useDispatch } from "react-redux";
+import {EmptyBasketModel} from './EmptyBasketModel'
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import styles from "./checkoutcard.module.css";
 
-export const CheckoutCards = (props) => {
+export const CheckoutCards = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
-    const getdata = useSelector((state)=> state.cartreducer.carts);
+    const getdata = useSelector((state)=> state.carts.carts);
+    const [saving,setSaving] = useState([]);
+    const [price, setPrice] = useState([]);
+
     const subtotal = ()=>{
         let price = 0;
         getdata.map((ele,k)=>{
-            price = ele.price+ price
+            price = ele.productprice * ele.quantity +price
         });
-        return price;
+        console.log(price, 'price')
+        setPrice(price) ;
     };
     const savings = ()=>{
-        let save1 = 0;
+        let saving = 0;
         getdata.map((ele,k)=>{
-            save1 = ele.sprice + save1;
+          saving =
+          (ele.quantity * (ele.StrikePrice-ele.productprice))+ saving
         });
-        return save1;
+        setSaving(saving)
     }
+    useEffect(()=>{
+      savings(saving);
+      subtotal(price);
+      // stotal();
+    },[getdata])
     
   return (
     <div className={styles.container}>
       <div className={styles.buttondiv}>
-        {/* {categories.length !== 0 ? <EmptyBasketModel /> : null} */}
+        {getdata.length !== 0 ? <EmptyBasketModel /> : null}
         <button
           onClick={() => {
             navigate("/");
@@ -37,13 +48,13 @@ export const CheckoutCards = (props) => {
         </button>
       </div>
       <div className={styles.checkoutcardDiv}>
-        {/* {categories.length !== 0 ? ( */}
+        {getdata.length !== 0 ? (
           <div className={styles.checkoutcard}>
             <div className={styles.chargesDiv}>
               <div className={styles.chargesSection1}>
                 <div>
                   <p>Subtotal</p>
-                  <span>Rs.{subtotal()} </span>
+                  <span>Rs.{price.toFixed(2)} </span>
                 </div>
                 <div>
                   <p>Delivery Charges</p>
@@ -51,7 +62,7 @@ export const CheckoutCards = (props) => {
                 </div>
                 <div className={styles.totalDiv}>
                   <p>TOTAL</p>
-                  <span>Rs.{subtotal()} </span>
+                  <span>Rs.{price.toFixed(2)} </span>
                 </div>
               </div>
               <div className={styles.savingDiv}>
@@ -60,7 +71,7 @@ export const CheckoutCards = (props) => {
                   alt=""
                 />
                 <span>You saved!</span>
-                <span>RS. {savings}</span>
+                <span>RS. {saving.toFixed(2)}</span>
               </div>
             </div>
             <div className={styles.coupondiv}>
@@ -80,7 +91,7 @@ export const CheckoutCards = (props) => {
             </div>
           </div>
         ) 
-        {/* : null} */}
+        : null}
       </div>
     </div>
   )

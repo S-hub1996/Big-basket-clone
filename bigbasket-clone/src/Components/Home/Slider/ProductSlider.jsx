@@ -3,8 +3,11 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import "./ProductSlider.css";
 import snacksBrandedFood from "../../Product_page/snacksBrandedFood_store";
 import Crd from "../../Product_page/Crd";
+import { useDispatch } from "react-redux";
+import { ADD } from '../../../Redux/CartCheckout/action/action'
 
 export const ProductSlider = () => {
+  const dispatch = useDispatch();
   const slides = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
   const slideLeft = () => {
     var slider = document.getElementById("slider");
@@ -14,6 +17,11 @@ export const ProductSlider = () => {
   const slidesOnRight = () => {
     var slider = document.getElementById("slider");
     slider.scrollLeft = slider.scrollLeft - 400;
+  };
+
+  const send = (Props) => {
+    // console.log(e);
+    dispatch(ADD(Props));
   };
 
   return (
@@ -43,6 +51,7 @@ export const ProductSlider = () => {
                     backgroundColor: "rgb(219, 219, 27)",
                     borderRadius: "11%",
                   }}
+                  onClick={() => send(props)}
                 >
                   Add Cart
                 </button>

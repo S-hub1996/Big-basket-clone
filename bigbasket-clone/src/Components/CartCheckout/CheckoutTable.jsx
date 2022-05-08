@@ -1,19 +1,22 @@
 import React,{useState } from 'react';
 import styles from './checkout.module.css';
 import { Listitems } from './Listitems';
+import { useSelector } from 'react-redux';
 
-const [data,setData] = useState([]);
-const getdata = useSelector((state)=> state.cartreducer.carts);
-const compare = ()=>{
-    let comparedata = getdata.filter((props)=>{
-      return props.id == id
-    });
-    setData(comparedata);
-  }
-  useEffect(()=>{
-    compare();
-  },[id])
+// const [data,setData] = useState([]);
+
+// const compare = ()=>{
+//     let comparedata = getdata.filter((props)=>{
+//       return props.id == id
+//     });
+  //   setData(comparedata);
+  // }
+  // useEffect(()=>{
+    
+  // },[id])
 export const CheckoutTable = () => {
+  const getdata = useSelector((state)=> state.carts.carts);
+  
   return (
     <div className={styles.checkoutTable}>
     <div className={styles.tableHeading}>
@@ -26,9 +29,9 @@ export const CheckoutTable = () => {
         <div className={styles.saving}>SAVINGS</div>
     </div>
     <div>
-      { getdata.map((ele)=> {
+      { getdata.map((val)=> {
           return (
-            <Listitems id = {ele.id} productName = {ele.productName}  productprice = {ele.productprice} StrikePrice = {ele.strikePrice} quantity = {ele.quantity} price = {ele.price} sprice = {ele.sprice}  />
+            <Listitems  id={val.id} OFF={val.OFF}  QtyPiece={val.QtyPiece} QtyPieceForOneElement={val.QtyPieceForOneElement} productName={val.productName}  productprice={val.productprice} StrikePrice={val.StrikePrice} Brand={val.Brand} Date={val.Date} image={val.image} quantity={val.quantity}  />
           )
   
       })
