@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import { useDispatch } from 'react-redux';
 import styles from './checkoutcard.module.css'
-import {emptyCart} from '../../Redux/cartCheckout/action/action'
+import {emptyCart} from '../../Redux/CartCheckout/action/action'
 
 const style = {
     position: 'absolute',
@@ -19,6 +19,7 @@ const style = {
     p: 2,
 };
 
+
 export const EmptyBasketModel = () => {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
@@ -27,13 +28,12 @@ export const EmptyBasketModel = () => {
 
     const handleEmptyCart = () => {
         dispatch(emptyCart())
-        setOpen(false);
-        //  axios.delete(`/items/deleteall?user=62435193c1dab43bbce3f6eb`).then().catch(e => console.log(e.message))
+        // axios.delete(`/items/deleteall?user=62435193c1dab43bbce3f6eb`).then().catch(e => console.log(e.message))
     }
 
     return (
         <div>
-            <button className={styles.emptybutton} onClick={handleOpen}><i class="fa fa-shopping-basket"></i> EMPTY BASKET</button>
+            <button className={styles.emptybutton} onClick={handleOpen}>EMPTY BASKET</button>
             <Modal
                 open={open}
                 onClose={handleClose}

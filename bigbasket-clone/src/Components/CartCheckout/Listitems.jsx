@@ -1,12 +1,13 @@
 import React,{ useEffect, useState } from 'react';
 import styles from "./checkout.module.css";
-import { useNavigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import {DLT,ADD,REMOVE} from '../../Redux/CartCheckout/action'
+import {DLT,ADD,REMOVE} from '../../Redux/CartCheckout/action/action'
 
 export const Listitems = (props) => {
     const [data,setData] = useState([]);
-  console.log(data);
+  // console.log(data);
+  // const [price,setPrice] = useState([]);
 
   const {id} = useParams();
   // console.log(id);
@@ -15,9 +16,8 @@ export const Listitems = (props) => {
 
   const dispatch = useDispatch();
 
-  
-  const getdata = useSelector((state)=> state.cartreducer.carts);
-  console.log(getdata);
+  const getdata = useSelector(state => state.carts.carts)
+  // console.log(getdata)
 
 
   const compare = ()=>{
@@ -39,31 +39,33 @@ export const Listitems = (props) => {
     dispatch(DLT(props));
     // history("/");
 }
-const total = ()=>{
-    let price = 0;
-    getdata.map((props,k)=>{
-        price = props.quantity * props.productprice 
-    });
-    // setPrice(price);
-};
-const stotal = ()=>{
-    let sprice = 0;
-    getdata.map((props,k)=>{
-        sprice = props.quantity * props.StrikePrice
-    });
-    // setsPrice(sprice);
-};
+// const total = ()=>{
+//     let price = 0;
+//     getdata.map((e,k)=>{
+//         price = e.quantity * e.productprice
+//         setPrice(price);
+//     });
+    
+// };
+// const stotal = ()=>{
+//     let sprice = 0;
+//     getdata.map((props,k)=>{
+//         sprice = props.quantity * props.StrikePrice
+//     });
+//     setPrice(sprice);
+// };
+
 
 // remove one
-const remove = (item)=>{
-  dispatch(REMOVE(item))
+const remove = (props)=>{
+  dispatch(REMOVE(props))
 }
 
   useEffect(()=>{
     compare();
-    total();
-    stotal();
-  },[id,total,stotal])
+    // total();
+    // stotal();
+  },[id])
 
   return (
     <div className={styles.listItemDiv}>
@@ -89,14 +91,14 @@ const remove = (item)=>{
         </div>
       </div>
       <div>
-        <div>Rs.{props.price} </div>
+        <div>Rs.{(props.quantity * props.productprice).toFixed(2)} </div>
       </div>
       <div className={styles.crossSign} 
       onClick={()=>dlt(props.id)}>
         <img src="https://www.bigbasket.com/static/uiv2/css/images/close_grid_icon.png" />
       </div>
       <div>
-        <div className={styles.savings}>Rs.{props.sprice} </div>
+        <div className={styles.savings}>Rs. {(props.quantity * props.StrikePrice).toFixed(2)}</div>
       </div>
     </div>
   )

@@ -17,10 +17,10 @@ export const DLT = (id) => {
 
 // remove individual iteam
 
-export const REMOVE = (iteam) => {
+export const REMOVE = (item) => {
     return {
         type: "RMV_ONE",
-        payload: iteam
+        payload: item
     }
 }
 

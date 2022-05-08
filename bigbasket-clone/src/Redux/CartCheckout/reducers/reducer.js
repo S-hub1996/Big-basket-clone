@@ -9,7 +9,7 @@ export const cartreducer = (state = INIT_STATE, action) => {
       const IteamIndex = state.carts.findIndex(
         (iteam) => iteam.id === action.payload.id
       );
-      console.log(IteamIndex.quantity);
+    //   console.log(IteamIndex);
       if (IteamIndex >= 0) {
         state.carts[IteamIndex].quantity += 1;
         return {
@@ -27,13 +27,13 @@ export const cartreducer = (state = INIT_STATE, action) => {
     case EMPTY_CART: {
       return {
         ...state,
-        cart: [],
+        carts: [],
       };
     }
 
     case "RMV_CART":
       const data = state.carts.filter((el) => el.id !== action.payload);
-      console.log(data);
+    //   console.log(data);
 
       return {
         ...state,
@@ -45,15 +45,15 @@ export const cartreducer = (state = INIT_STATE, action) => {
         (iteam) => iteam.id === action.payload.id
       );
 
-      if (state.carts[IteamIndex_dec].qnty >= 1) {
-        const dltiteams = (state.carts[IteamIndex_dec].qnty -= 1);
+      if (state.carts[IteamIndex_dec].quantity >= 1) {
+        const dltiteams = (state.carts[IteamIndex_dec].quantity -= 1);
         console.log([...state.carts, dltiteams]);
 
         return {
           ...state,
           carts: [...state.carts],
         };
-      } else if (state.carts[IteamIndex_dec].qnty === 1) {
+      } else if (state.carts[IteamIndex_dec].quantity === 1) {
         const data = state.carts.filter((el) => el.id !== action.payload);
 
         return {

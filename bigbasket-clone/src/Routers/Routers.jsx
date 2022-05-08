@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 // import { SingleProduct } from "../Components/productPages/SingleProduct";
 import { Error } from "../Components/Header & Footer/Header/HeaderElement";
 import ProductAssemble from "../Components/Product_page/ProductAssemble"
-// import { Checkout } from '../Components/CartCheckout/page/Checkout';
+import { Checkout } from '../Components/CartCheckout/page/Checkout';
 
 // import { Checkout } from "../Pages/Checkout";
 import { Home } from "../Components/Home/Home";
@@ -34,7 +34,7 @@ export const Routers = () => {
         {/* <Route path="/:id" element={<SingleProduct />} /> */}
         {/* <Route path="/cl/:category/:id" element={<SingleProduct />} /> */}
         <Route path="/cl/:category/*" element={<Error>404 Not Found</Error>} />
-        {/* <Route path="/checkout" element={<Checkout />} /> */}
+        <Route path="/checkout" element={<Checkout />} />
         <Route path="/*" element={<Error>404 Not Found</Error>} />
         <Route path="wallet" element={<Wallet />} />
         <Route path="/recharge" element={<Recharge/>}/>

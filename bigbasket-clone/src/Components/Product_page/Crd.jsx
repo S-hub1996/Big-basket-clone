@@ -6,7 +6,7 @@ const Crd = (props) => {
 
 
   const send = (Props)=>{
-    // console.log(e);
+    console.log(props);
     dispatch(ADD(Props));
   }
   return (

@@ -24,7 +24,7 @@
 .checkoutTable{
     display: flex;
     flex-direction: column;
-    width: 85%;
+    width: 100%;
     margin: auto;
     padding: 40px 25px 16px 25px;
     text-align: left;
@@ -72,7 +72,7 @@
     display: grid;
     margin: auto;
     grid-template-columns: .6fr 5.2fr 2fr 2.2fr 2fr 1fr 1.2fr;
-    width: 85%;
+    width: 100%;
     align-items: center;
     text-align: right;
     font-size: 1rem;
