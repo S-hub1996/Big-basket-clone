@@ -1,0 +1,23 @@
+.otpDiv{
+    background-color:hsl(0,0%,95%);
+    padding: 20px 65px;
+    border-radius: 10px;
+}
+.otpDiv input{
+    outline:none;
+    border: none;
+    border-bottom: 1px solid green;
+    padding: 5px 5px;
+
+}
+.otpDiv button{
+    background-color:#84c225;
+    padding:10px 20px;
+    width:120px;
+    margin-top: 20px;
+    border: none;
+    border-radius:10px;
+    font-weight:800;
+    color:white;
+    letter-spacing: 1px;
+}

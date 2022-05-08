@@ -1,0 +1,146 @@
+.FirstDiv{
+    display: flex;
+    gap:10px;
+    font-size:18px ;  
+    border : 1px solid rgb(0,0,0,0.3);
+    padding:10px;
+    align-items:center;
+}
+.FirstDiv>p{
+    margin-top:15px;
+}
+.secondDiv{
+    background-color:hsl(0,0%,94%);
+    padding-top:20px;
+    border : 1px solid rgb(0,0,0,0.3)
+}
+.secondDiv>div:first-child{
+    width:fit-content;
+    background-color:white;
+    margin-left: 40px;
+    padding:10px;
+    position: relative;
+    top:5px;
+    box-shadow:   inset 0px 0px 0px -3px rgba(50, 50, 1000, 0.1);
+}
+.secondDiv>div:first-child>h5{
+    font-size:18px;
+}
+.secondDiv>div:first-child>p{
+    font-size:13px;
+}
+.thirdDiv>div:first-child>div{
+    display: flex;
+    gap:10px;
+    
+    margin: 0px 10px;
+    height:fit-content;
+    margin-top:20px;
+}
+.thirdDiv{
+    border : 1px solid black;
+    height:fit-content;
+    width:80%;
+}
+.thirdDiv>div:first-child>div>p:first-child{
+    border-right: 1px solid rgb(0,0,0,0.2);
+    padding-right:10px;
+
+}
+.thirdDiv>div:first-child>div>p:last-child{
+    font-size:14px;
+    color: rgb(0,0,0,0.5);
+}
+.thirdDiv>div:first-child>p{
+    font-size:14px;
+    color:grey;
+    margin: 0px 10px;
+
+}
+.thirdDiv>div:first-child>p>span{
+    color: green;
+    font-size:16px;
+    
+}
+.imgDiv>img{
+    width:50px;
+    height:50px;
+
+}
+imgDiv+div>p{
+    border: none;
+}
+.viewmore >p{
+ border:none !important;
+ font-size: 12px;
+ text-decoration: underline;
+ color:rgb(119, 119, 186);
+}
+.slot{
+    width:fit-content;
+    height:fit-content;
+    margin: 0px;
+}
+.slot>p{
+    border: none !important;
+    /* color: gray; */
+    font-weight: 600;
+letter-spacing: 1px;
+margin: 0px;
+}
+.slotTime{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    font-size:14px;
+    color:grey;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding:15px;
+    padding-bottom: 5px;
+    width:95%;
+  margin: 0px !important;
+}
+.slotTime>svg{
+    margin-bottom: 13px;
+}
+
+.thirdDiv{
+    width:90%;
+    height:fit-content;
+    margin: auto;
+    border:1px solid rgb(0,0,0,0.3);
+    padding:10px;
+    margin-top:20px;
+    margin-left:30px;
+}
+
+.options{
+    border:1px solid rgb(0,0,0,0.3);
+    
+}
+.fourthDiv{
+    margin-top: 50px !important;
+    display:flex;
+    border:1px solid rgb(0,0,0,0.3);
+    padding:15px;
+    
+    
+}
+.fourthDiv>button{
+    background-color:hsl(89,79%,43%);
+    color:white;
+    font-size:14px;
+    /* letter-spacing: 0.5px; */
+    padding:5px 15px;
+    border:none;
+    border-radius:1px;
+    display:block;
+    margin-left: auto;
+    margin-right: 50px;
+    height: 50px;
+    width:250px;
+    
+}
+
+
+
