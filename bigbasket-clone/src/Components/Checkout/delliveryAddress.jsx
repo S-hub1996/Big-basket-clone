@@ -15,6 +15,10 @@ export const DelliveryAddress = () => {
       type: 'deliveryoption',
       payload: false,
     })
+    dispatch({
+      type: "payment",
+      payload:false
+    })
   }
   return (
     <div className={styles.delivery}>

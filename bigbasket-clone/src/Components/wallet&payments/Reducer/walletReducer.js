@@ -36,6 +36,13 @@ export const WalletReducer = (state = initialState, action) => {
         otp: action.payload,
       }
     }
+    case "useBalance": {
+      return {
+        ...state,
+        Balance:state.Balance-action.payload
+      }
+    }
+      
     default: {
       return {
         ...state,
