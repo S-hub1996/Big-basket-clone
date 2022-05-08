@@ -48,7 +48,7 @@ export const MyBasket = ({ loading, login, wrong, clearWrongLogin }) => {
         // onMouseLeave={popoverLeave}
       >
         <div className={styles.basketDiv}>
-          <div className="basket" onClick={() => navigate("/checkout")}>
+          <div className="basket" onClick={() => navigate("/basket")}>
             <span>
               <i className="basket-image"></i>
               <b className="cart-count">No. of Products</b>

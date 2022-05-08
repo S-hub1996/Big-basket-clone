@@ -1,12 +1,12 @@
-import React,{useState} from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import React from 'react';
+import {  useSelector } from 'react-redux';
 import { CheckoutTable } from '../CheckoutTable';
 import { CheckoutCards } from '../CheckoutCard';
 import styles from '../checkout.module.css'
 
 
-export const Checkout = () => {
-    let dispatch  = useDispatch();
+export const Basket = () => {
+    // let dispatch  = useDispatch();
     let list = useSelector(state => state.carts.carts)
     console.log(list, 'list')
   return (

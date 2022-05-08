@@ -1,39 +1,38 @@
-import React,{useState, useEffect} from 'react';
-import { MdSavings } from 'react-icons/md';
-import {EmptyBasketModel} from './EmptyBasketModel'
-import { useDispatch, useSelector } from "react-redux";
+import React, { useState, useEffect } from "react";
+// import { MdSavings } from 'react-icons/md';
+import { EmptyBasketModel } from "./EmptyBasketModel";
+import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import styles from "./checkoutcard.module.css";
 
 export const CheckoutCards = () => {
-    const dispatch = useDispatch();
-    const navigate = useNavigate();
-    const getdata = useSelector((state)=> state.carts.carts);
-    const [saving,setSaving] = useState([]);
-    const [price, setPrice] = useState([]);
+  // const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const getdata = useSelector((state) => state.carts.carts);
+  const [saving, setSaving] = useState([]);
+  const [price, setPrice] = useState([]);
 
-    const subtotal = ()=>{
-        let price = 0;
-        getdata.map((ele,k)=>{
-            price = ele.productprice * ele.quantity +price
-        });
-        console.log(price, 'price')
-        setPrice(price) ;
-    };
-    const savings = ()=>{
-        let saving = 0;
-        getdata.map((ele,k)=>{
-          saving =
-          (ele.quantity * (ele.StrikePrice-ele.productprice))+ saving
-        });
-        setSaving(saving)
-    }
-    useEffect(()=>{
-      savings(saving);
-      subtotal(price);
-      // stotal();
-    },[getdata])
-    
+  const subtotal = () => {
+    let price = 0;
+    getdata.map((ele, k) => {
+      price = ele.productprice * ele.quantity + price;
+    });
+    console.log(price, "price");
+    setPrice(price);
+  };
+  const savings = () => {
+    let saving = 0;
+    getdata.map((ele, k) => {
+      saving = ele.quantity * (ele.StrikePrice - ele.productprice) + saving;
+    });
+    setSaving(saving);
+  };
+  useEffect(() => {
+    savings(price);
+    subtotal(saving);
+    // stotal();
+  }, [savings, subtotal]);
+
   return (
     <div className={styles.container}>
       <div className={styles.buttondiv}>
@@ -54,7 +53,7 @@ export const CheckoutCards = () => {
               <div className={styles.chargesSection1}>
                 <div>
                   <p>Subtotal</p>
-                  <span>Rs.{price.toFixed(2)} </span>
+                  <span>Rs.{Math.round(price)} </span>
                 </div>
                 <div>
                   <p>Delivery Charges</p>
@@ -62,7 +61,7 @@ export const CheckoutCards = () => {
                 </div>
                 <div className={styles.totalDiv}>
                   <p>TOTAL</p>
-                  <span>Rs.{price.toFixed(2)} </span>
+                  <span>Rs.{Math.round(price)} </span>
                 </div>
               </div>
               <div className={styles.savingDiv}>
@@ -71,17 +70,16 @@ export const CheckoutCards = () => {
                   alt=""
                 />
                 <span>You saved!</span>
-                <span>RS. {saving.toFixed(2)}</span>
+                <span>RS. {Math.round(saving)} </span>
               </div>
             </div>
             <div className={styles.coupondiv}>
-              <p>
-                * For this order: Accepted food coupon is 
-              </p>
+              <p>* For this order: Accepted food coupon is</p>
             </div>
             <div className={styles.buttonSection}>
               <div>
-                <button className={styles.checkoutButton}>
+                <button className={styles.checkoutButton} 
+                onclick ={()=>navigate("/checkout")}>
                   <p>CHECKOUT</p> <span></span>
                 </button>
               </div>
@@ -90,9 +88,8 @@ export const CheckoutCards = () => {
               <p>** Actual delivery charges computed at checkout time</p>
             </div>
           </div>
-        ) 
-        : null}
+        ) : null}
       </div>
     </div>
-  )
-}
+  );
+};

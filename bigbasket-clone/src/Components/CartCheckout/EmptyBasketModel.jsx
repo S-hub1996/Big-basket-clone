@@ -33,7 +33,7 @@ export const EmptyBasketModel = () => {
 
     return (
         <div>
-            <button className={styles.emptybutton} onClick={handleOpen}>EMPTY BASKET</button>
+            <button className={styles.emptybutton} onClick={handleOpen}>  EMPTY BASKET</button>
             <Modal
                 open={open}
                 onClose={handleClose}

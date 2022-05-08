@@ -76,12 +76,12 @@ export const BasketItem = ({ item }) => {
 
   return (
     <div className={styles.listItems}>
-      <img src={item.product.photo[0]} style={{ width: "5.5rem" }} alt="" />
+      <img src={item.image} style={{ width: "5.5rem" }} alt="" />
       <div className={styles.nameDiv}>
-        <span>{item.product.brand}</span>
-        <span>{item.product.name}</span>
+        <span>{item.brand}</span>
+        <span>{item.productName}</span>
         <span>
-          {item.quantity} x {item.product.price}
+          {item.quantity} x {item.productprice}
         </span>
       </div>
       <div className={styles.quantityDiv}>
@@ -90,7 +90,7 @@ export const BasketItem = ({ item }) => {
         <span onClick={handleIncrease}>+</span>
       </div>
       <div className={styles.priceDiv}>
-        <span>Rs. {item.product.price}</span>
+        <span>Rs. {item.productprice}</span>
         <span>Saved Rs. {saving.toFixed(2)}</span>
       </div>
       <div className={styles.crossDiv} onClick={handleDelete}>
