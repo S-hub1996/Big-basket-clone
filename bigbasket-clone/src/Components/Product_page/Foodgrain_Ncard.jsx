@@ -3,6 +3,7 @@ import Crd from './Crd'
 import "./Bigbasket.css"
 import foodOilAndMasala from './Foodgrain_Store'
 import { Checkbox } from './Checkbox'
+import {Slider} from "../Home/Slider/UpperSlider"
 // import { useDispatch, useSelector } from 'react-redux'
 // import { sorted_data } from '../Redux/action'
 export const Mcard = () => {
