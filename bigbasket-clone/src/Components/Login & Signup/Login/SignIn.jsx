@@ -9,7 +9,7 @@ import { SigninSection } from "../../Header & Footer/Header/HeaderElement";
 import axios from "axios";
 
 export const SignIn = ({ isSigning, setIsSigning }) => {
-  const { data } = useSelector((state) => state.user);
+  const { data } = (state) => state.user;
   const dispatch = useDispatch();
   const [otp, setotp] = useState(false);
   const [otpValue, setotpValue] = useState("");
@@ -28,29 +28,8 @@ export const SignIn = ({ isSigning, setIsSigning }) => {
   };
 
   const handleContinue = () => {
-    // check if details are correct
-    if (userDetails.number && userDetails.number.length === 10) {
-      // then number is correct send to backend and get otp
-      axios
-        .post("/users/signin", userDetails)
-        .then((res) => {
-          dispatch(userUpdateRequest());
-          dispatch(userUpdateSuccess({ id: res.data.userId }));
-          res.data.otp === "Enter last four digit of number"
-            ? setotp(true)
-            : alert(`Enter details are invalid.`);
-        });
-    }
-    if (userDetails.email) {
-      // then send email to backend validate it and get otp
-      axios
-        .post("/users/signin", userDetails)
-        .then((res) =>
-          res.data.otp === "Enter last four digit of number"
-            ? setotp(true)
-            : alert(`Enter details are invalid.`)
-        );
-    }
+    setotp(true)
+    console.log("otpppp3",otp)
   };
 
   const handleOTP = () => {
@@ -124,7 +103,7 @@ export const SignIn = ({ isSigning, setIsSigning }) => {
                   Please check the OTP sent to your mobile number
                 </p>
                 <div>
-                  <span>7987343655</span>
+                  <span>{userDetails.number}</span>
                   <button
                     onClick={() => {
                       setotp(false);

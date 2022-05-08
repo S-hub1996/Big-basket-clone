@@ -81,7 +81,7 @@ export const Offers = () => {
 
       <h2>Best Seller</h2>
       <ProductSlider />
-      
+
       <h2>Most Popular</h2>
       <div className="payment">
         <div className="paymentin">

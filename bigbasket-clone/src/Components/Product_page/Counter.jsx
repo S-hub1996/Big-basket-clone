@@ -1,24 +1,38 @@
-import React from "react"
+import React, { useState } from 'react'
 
+export const Counter = () => {
+  const [num, setNum] = useState(0);
 
- export default function Counter() {
-  const [counter,setCounter]=React.useState(0)
-  const handleIncrement =(value) =>{
-    
-    
-    
-      setCounter(counter+value)
-  
-    
+const incNum = () =>{
+setNum(num+1)
+}
+const decNum = () =>{
+  if(num>0){
+    setNum(num-1)
   }
-  console.log('updated',counter)
+  else{
+    alert("Sorry Zero Limit Reach!!")
+    setNum(0)
+  }
+ 
+}
+
+
+
   return (
-    <>
-    <div style={{display:"flex",flexDirection:"row",height:"30px"}}>
-     <button onClick={() => handleIncrement(1)} > + </button>
-               <p>{counter}</p>
-     <button onClick={() => handleIncrement(-1)} > - </button>
-     </div>
-  </>
-  );
+      <>
+    <div className='main_div'>
+        <div className='center_div'>
+           
+            <div style={{display:"flex",flexDirection:"row",height:"30px"
+          }} className='btn_div'>
+                <button onClick={incNum}>+</button>
+                <p>{num}</p>
+                <button onClick={decNum}>-</button>
+            </div>
+        </div>
+
+    </div>
+    </>
+  )
 }
