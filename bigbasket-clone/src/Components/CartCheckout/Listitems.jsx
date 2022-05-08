@@ -98,7 +98,7 @@ const remove = (props)=>{
         <img src="https://www.bigbasket.com/static/uiv2/css/images/close_grid_icon.png" />
       </div>
       <div>
-        <div className={styles.savings}>Rs. {(props.quantity * props.StrikePrice).toFixed(2)}</div>
+        <div className={styles.savings}>Rs. {(props.quantity * (props.StrikePrice-props.productprice)).toFixed(2)}</div>
       </div>
     </div>
   )

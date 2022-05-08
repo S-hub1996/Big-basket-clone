@@ -24,7 +24,7 @@ export const CheckoutCards = () => {
         let saving = 0;
         getdata.map((ele,k)=>{
           saving =
-          (ele.quantity * ele.StrikePrice)+ saving
+          (ele.quantity * (ele.StrikePrice-ele.productprice))+ saving
         });
         setSaving(saving)
     }
@@ -54,7 +54,7 @@ export const CheckoutCards = () => {
               <div className={styles.chargesSection1}>
                 <div>
                   <p>Subtotal</p>
-                  <span>Rs.{price} </span>
+                  <span>Rs.{price.toFixed(2)} </span>
                 </div>
                 <div>
                   <p>Delivery Charges</p>
@@ -62,7 +62,7 @@ export const CheckoutCards = () => {
                 </div>
                 <div className={styles.totalDiv}>
                   <p>TOTAL</p>
-                  <span>Rs.{price} </span>
+                  <span>Rs.{price.toFixed(2)} </span>
                 </div>
               </div>
               <div className={styles.savingDiv}>
@@ -71,7 +71,7 @@ export const CheckoutCards = () => {
                   alt=""
                 />
                 <span>You saved!</span>
-                <span>RS. {saving}</span>
+                <span>RS. {saving.toFixed(2)}</span>
               </div>
             </div>
             <div className={styles.coupondiv}>
