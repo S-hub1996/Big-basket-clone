@@ -1,9 +1,9 @@
-import React from "react";
-import { Route, Routes } from "react-router-dom";
+import React from 'react'
+import { Route, Routes } from 'react-router-dom'
 // import { SingleProduct } from "../Components/productPages/SingleProduct";
-import { Error } from "../Components/Header & Footer/Header/HeaderElement";
-import ProductAssemble from "../Components/Product_page/ProductAssemble"
-import { Basket } from '../Components/CartCheckout/page/Basket';
+import { Error } from '../Components/Header & Footer/Header/HeaderElement'
+import ProductAssemble from '../Components/Product_page/ProductAssemble'
+import { Basket } from '../Components/CartCheckout/page/Basket'
 
 // import { Checkout } from "../Pages/Checkout";
 import { Home } from "../Components/Home/Home";
@@ -19,17 +19,17 @@ import { Bcard } from '../Components/Product_page/snacksBrandedFood_Ncard';
 import { Ccard } from '../Components/Product_page/eggMealFish_Ncard';
 import { Dcard } from "../Components/Product_page/cleaningHousehold_Ncard";
 
+
 export const Routers = () => {
   return (
     <>
       <Routes>
-      
-        <Route path="/cl/fruits-vegetables/" element={<Ncard/>} />
-        <Route path="/cl/foodgrains-oil-masala/" element={<Mcard/>} />
-        <Route path="/cl/bakery-cakes-dairy/" element={<Acard/>} />
-        <Route path="/cl/snacks-branded-foods/" element={<Bcard/>} />
-        <Route path="/cl/eggs-meat-fish/" element={<Ccard/>} />
-        <Route path="/cl/cleaning-household/" element={<Dcard/>} />
+        <Route path="/cl/fruits-vegetables/" element={<Ncard />} />
+        <Route path="/cl/foodgrains-oil-masala/" element={<Mcard />} />
+        <Route path="/cl/bakery-cakes-dairy/" element={<Acard />} />
+        <Route path="/cl/snacks-branded-foods/" element={<Bcard />} />
+        <Route path="/cl/eggs-meat-fish/" element={<Ccard />} />
+        <Route path="/cl/cleaning-household/" element={<Dcard />} />
         <Route path="/SignIn" element={<SignIn />} />
         <Route path="/" element={<Home />} />
         <Route path="/big-basket" element={<Home />} />
@@ -43,8 +43,8 @@ export const Routers = () => {
         <Route path="/*" element={<Error>404 Not Found</Error>} />
         <Route path="wallet" element={<Wallet />} />
         <Route path="/recharge" element={<Recharge />} />
-        <Route path="/checkout" element={<Checkout/>}/>
+        <Route path="/checkout" element={<Checkout />} />
       </Routes>
     </>
-  );
-};
+  )
+}

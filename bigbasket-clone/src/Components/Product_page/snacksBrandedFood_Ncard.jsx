@@ -33,7 +33,7 @@ export const Bcard = () => {
 
   return (
     <>
-    <div style={{width:"85%",margin:"auto"}} >
+    <div style={{width:"77%",margin:"auto"}} >
     <Slider imgs={[
                 'https://www.bigbasket.com/media/uploads/banner_images/L2-YXPL509-1200x300-25thmar.jpg',
                 'https://www.bigbasket.com/media/uploads/banner_images/L2-YXPL464-1200x300-25thmar.jpg',
@@ -46,7 +46,7 @@ export const Bcard = () => {
                   
             ]}/>
     </div>
-    <div style={{display:"grid", gridTemplateColumns:"20% 70%", gap:"20px"}}>
+    <div style={{display:"grid", gridTemplateColumns:"30% 68%"}}>
         <div className="sidebar_div">
           <Checkbox/>
         </div>

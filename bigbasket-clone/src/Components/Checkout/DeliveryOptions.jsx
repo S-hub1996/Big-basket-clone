@@ -7,6 +7,9 @@ import { useDispatch, useSelector } from 'react-redux'
 export const DeliveryOptions = () => {
     const state = useSelector((state) => state.CheckoutReducer);
     const dispatch = useDispatch();
+    const arr = useSelector((state) => state.carts.carts);
+    
+    console.log(arr,"total-state")
     const handleChange = () => {
         dispatch({
             type: "payment",
@@ -27,25 +30,25 @@ export const DeliveryOptions = () => {
       </div>
       <div className={styles.secondDiv}>
         <div>
-          <h5>Delivery Option:1</h5>
+          <h5>Delivery Option: {arr.length} </h5>
           <p>total Delivery Charge : Free</p>
-          <p>Shipments : 1</p>
+          <p>Shipments : {arr.length} </p>
         </div>
       </div>
       <div className={styles.thirdDiv}>
         <div>
           <div>
-            <p>Shipment: 1</p>
+                      <p>Shipment: { arr.length}</p>
             <p>Express Delivery</p>
           </div>
           <p>
             Delivery Charges : <span>Free</span>
           </p>
           <div className={styles.imgDiv}>
-            <img src="https://www.bigbasket.com/media/uploads/p/l/264003_12-johnsons-baby-buds.jpg" />
+            {arr.map((elm)=><img src={elm.image}/>)}
           </div>
           <div className={styles.viewmore}>
-            <p>View 1 items</p>
+            <p>View {arr.length} items</p>
           </div>
           <div className={styles.slot}>
             {' '}

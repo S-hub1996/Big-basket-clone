@@ -33,7 +33,7 @@ export const Ncard = () => {
 
   return (
     <>
-    <div>
+    <div style={{width:"77%",margin:"auto"}}>
     <Slider imgs={[
                 'https://www.bigbasket.com/media/uploads/banner_images/CXNP9510_1200x300_110322.jpg',
                 'https://www.bigbasket.com/media/uploads/banner_images/CXNP9507_1200x300_110322.jpg',
@@ -47,7 +47,7 @@ export const Ncard = () => {
 
 
     </div>
-    <div style={{display:"grid", gridTemplateColumns:"20% 70%", gap:"20px"}}>
+    <div style={{display:"grid", gridTemplateColumns:"30% 68%"}}>
         <div className="sidebar_div">
           <Checkbox/>
         </div>

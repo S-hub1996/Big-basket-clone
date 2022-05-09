@@ -3,7 +3,7 @@ import React from 'react'
 export const Checkbox = () => {
   return (
     <>
-      <div style={{ borderRight: '1px solid black', padding: '2%' }}>
+      <div style={{ borderRight: '1px solid black', padding: '2%',width:"230px",marginLeft:"170px" }}>
         <h5>Category</h5>
         <hr />
         <h6>Fruits & Vegetables </h6>

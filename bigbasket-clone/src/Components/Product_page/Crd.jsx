@@ -42,6 +42,7 @@ const Crd = (props) => {
                 display: "flex",
                 flexDirection: "row",
                 justifyContent: "center",
+                marginBottom:"40px",
               }}
             >
               <Counter />
