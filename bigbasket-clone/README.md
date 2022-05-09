@@ -1,7 +1,7 @@
 Big Basket Clone With React
-Hello Readers,
 
-I hope you are good and safe. I am happy to share with you all, our construct weak projects along with my Teammates. This blog is all about our journey and the challenges we faced while building the project. we have cloned the Big Basket Website this is an E-Commerce Website for helping this site you can buy the daily use grocery and products and find the details of the product .
+
+This blog is all about our journey and the challenges we faced while building the project. we have cloned the Big Basket Website this is an E-Commerce Website for helping this site you can buy the daily use grocery and products and find the details of the product .
 
 Creators:
 
