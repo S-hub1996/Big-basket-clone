@@ -2,21 +2,27 @@ Big Basket Clone With React
 
 
 This blog is all about our journey and the challenges we faced while building the project. we have cloned the Big Basket Website this is an E-Commerce Website for helping this site you can buy the daily use grocery and products and find the details of the product .
-
+<br>
 Creators:
-
-Shubham Verma
+<br>
+Shubham Verma 
+<br>
 Haroon qureshi
+<br>
 Swapnil Parchake
+<br>
 naga polamarasetti
+<br>
 Mohammad Saif
+<br>
 Dhiraj Dubey
+<br>
 We are in Unit-4 from Web-16 Batch students of Masai School
-
+<br><br>
 at the end of unit Masai team is assigned a project and the project is based on the technology we are learned in the whole unit in this project we are used React- Redux and React -Router-Dom.
-
+<br><br>
 Let’s take a look of our project : -
-
+<br><br>
 
 Live Demo: https://big-basket-clone-by-masai-school.netlify.app/
 
