@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+Big Basket Clone With React
+Hello Readers,
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I hope you are good and safe. I am happy to share with you all, our construct weak projects along with my Teammates. This blog is all about our journey and the challenges we faced while building the project. we have cloned the Big Basket Website this is an E-Commerce Website for helping this site you can buy the daily use grocery and products and find the details of the product .
 
-## Available Scripts
+Creators:
 
-In the project directory, you can run:
+Shubham Verma
+Haroon qureshi
+Swapnil Parchake
+naga polamarasetti
+Mohammad Saif
+Dhiraj Dubey
+We are in Unit-4 from Web-16 Batch students of Masai School
 
-### `npm start`
+at the end of unit Masai team is assigned a project and the project is based on the technology we are learned in the whole unit in this project we are used React- Redux and React -Router-Dom.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Let’s take a look of our project : -
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+Live Demo: https://big-basket-clone-by-masai-school.netlify.app/
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Blog link: https://medium.com/@shubhamkashayapverma/big-basket-clone-with-react-932fc3c12cdc
 
-### `npm run build`
+About Bigbasket:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+bigbasket — online grocery store
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+bigbasket.com is synonymous with superior quality and continues to strive for higher levels of customer trust and confidence, by taking feedback and giving our customers what they want. We have added the convenience of pre-cut fruits in our Fresho range. If it’s a product category you’re looking to shop from, we’ve made it convenient for you to access all products in a section easily. For instance, if you’re looking for beverages, you can order from a long list of beverages that include cool drinks, hot teas, fruit juices and more.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Our Experience
+Proper communication between team members leads to a hassle-free journey, right from the beginning of the week we all communicated through zoom for clearing doubts and checking each other’s progress till the last minute. Apart from problems like load shading and other technical problems like network issues, we managed to complete the project.
