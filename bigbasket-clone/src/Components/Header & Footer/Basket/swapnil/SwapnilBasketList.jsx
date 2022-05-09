@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import styles from "../basket.module.css";
@@ -29,7 +29,7 @@ export const SwapnilBasketList = () => {
             item.quantity <= 0 ? (
               dispatch(DLT({ id: item.id }))
             ) : (
-              <SwapnilBasketItem id={item.id} item={item} />
+              <SwapnilBasketItem id={item.id} OFF={item.OFF}  QtyPiece={item.QtyPiece} QtyPieceForOneElement={item.QtyPieceForOneElement} productName={item.productName}  productprice={item.productprice} StrikePrice={item.StrikePrice} Brand={item.Brand} Date={item.Date} image={item.image} quantity={item.quantity} />
             )
           )
         ) : (
@@ -48,7 +48,7 @@ export const SwapnilBasketList = () => {
             <section>
               <div>
                 <p>Subtotal</p>
-                <span>Rs. {price.toFixed(2)}</span>
+                <span>Rs. {Math.round(price)} </span>
               </div>
               <div>
                 <p>Delivery Charges</p>
@@ -57,7 +57,7 @@ export const SwapnilBasketList = () => {
             </section>
             <div
               className={styles.buttonDiv}
-              onClick={() => navigate("/checkout")}
+              onClick={() => navigate("/Basket")}
             >
               View Basket & Checkout
             </div>

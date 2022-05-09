@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import {logoutRequest,logoutSuccess} from "../../../Redux/Auth/auth.action";
 import axios from "axios";
 import { MyBasket } from "../Basket/MyBasket";
+import {SwapnilBasket} from '../Basket/swapnil/SwapnilBasket'
 
 
 export const Header = () => {
@@ -85,7 +86,7 @@ export const Header = () => {
               </div>
               <div className="empty-divs"></div>
               <div className="empty-divs"></div>
-              <MyBasket />
+              <SwapnilBasket />
             </div>
             <div className="search-bar small-screen">
               <input

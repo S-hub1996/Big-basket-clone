@@ -3,7 +3,7 @@ import styles from "../basket.module.css";
 import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import {DLT,ADD,REMOVE} from '../../../../Redux/CartCheckout/action/action'
-import styles from "../basket.module.css";
+
 
 export const SwapnilBasketItem = (item) => {
     const [data,setData] = useState([]);

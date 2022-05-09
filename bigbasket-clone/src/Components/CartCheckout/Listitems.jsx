@@ -71,8 +71,8 @@ const remove = (props)=>{
     <div className={styles.listItemDiv}>
       <div>&nbsp;</div>
       <div className={styles.description}>
-        <div className={styles.fade}>{props.Brand}</div>
-        <div>{props.productName}</div>
+        <div className={styles.fade}><p>{props.Brand}</p> </div>
+        <div><p>{props.productName}</p> </div>
       </div>
       <div>
         <div>Rs: {props.productprice} </div>

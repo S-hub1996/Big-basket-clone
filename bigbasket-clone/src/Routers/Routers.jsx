@@ -7,13 +7,11 @@ import { Basket } from '../Components/CartCheckout/page/Basket';
 
 // import { Checkout } from "../Pages/Checkout";
 import { Home } from "../Components/Home/Home";
-import { Login } from "../Components/Login & Signup/Login/Login";
+import { Login } from "../Components/Login & Signup/Login/SignIn";
 import { Wallet } from "../Components/wallet&payments/wallet";
 import {Recharge} from "../Components/wallet&payments/recharge"
 import { Checkout } from "../Components/Checkout/checkout";
 import { SignIn } from "../Components/Login & Signup/Login/SignIn";
-import { Wallet } from "../Components/wallet&payments/wallet";
-import {Recharge} from "../Components/wallet&payments/recharge"
 import { Ncard } from '../Components/Product_page/Ncard';
 import { Mcard } from '../Components/Product_page/Foodgrain_Ncard';
 import { Acard } from '../Components/Product_page/BakeryCakesDairy_Ncard';
