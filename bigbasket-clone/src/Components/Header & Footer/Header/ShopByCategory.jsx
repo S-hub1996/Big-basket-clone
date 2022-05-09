@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ArrowDown } from "../Header/HeaderElement";
+import { BiWallet } from 'react-icons/bi'
 import {
   CategoryDiv,
   ShopByCategorySection,
@@ -9,6 +10,11 @@ import {
 import categoryData from "../Header/category.json";
 
 export const ShopByCategory = ({ sidebar, setSidebar }) => {
+
+  const navigate=useNavigate()
+
+
+
   return (
     <ShopByCategorySection
       left={sidebar ? "0%" : "-100%"}
@@ -41,9 +47,11 @@ export const ShopByCategory = ({ sidebar, setSidebar }) => {
             <i></i>
             <span>OFFERS</span>
           </div>
-          <div className="bb-specialty">
-            <i></i>
-            <span>BB SPECIALTY</span>
+          <div onClick={()=>navigate("/wallet")} className="bb-specialty">
+            
+              <BiWallet  color={"black"} size={20}/>
+            
+            <span>BB WALLET</span>
           </div>
         </>
       )}

@@ -604,6 +604,9 @@ export const ShopByCategorySection = styled.section`
       background-position: 60.281858250815965% 60.23102310231023%;
     }
   }
+  .bb-specialty:hover{
+    color:white ;
+  }
 
   .bb-specialty {
     color: #666;
@@ -613,18 +616,22 @@ export const ShopByCategorySection = styled.section`
       height: 15px;
       display: inline-block;
       margin-right: 5px;
-      background-image: url(https://www.bbassets.com/static/v2530/custPage/build/content/img/header.css.svg);
+      // background-image: url(https://www.bbassets.com/bb2assets/images/png/Wallet.png);
       background-position: 16.173811611102742% 14.851485148514852%;
     }
   }
+  
 
   .offers,
   .bb-specialty {
     :hover {
       background-color: #74ab21;
+      color:white;
     }
   }
 `;
+
+
 
 export const ShopSection = styled.section`
   position: relative;

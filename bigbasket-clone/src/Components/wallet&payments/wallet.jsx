@@ -16,9 +16,12 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Add} from './Reducer/Action'
 import { useNavigate } from 'react-router-dom'
 
+
 export const Wallet = () => {
   const state = useSelector((state) => state.WalletReducer)
-  const [balance, setBalance] = useState(0)
+  const [balance, setBalance] = useState(0);
+  
+
   const dispatch = useDispatch()
   const navigate = useNavigate()
   const handleAdd = () => {
@@ -92,10 +95,18 @@ export const Wallet = () => {
         <div className={styles.maincontainer}>
           <div className={styles.iconsdiv}>
             <div>
-              <MdOutlineDashboard size={20} />
+              
+              <MdOutlineDashboard onClick={()=>navigate("/")} size={20} /> 
+              
+             
+              
+              
             </div>
             <div>
-              <RiFileListLine size={20} />
+              
+              <RiFileListLine onClick={()=>navigate("/checkout")} size={20} />
+              
+              
             </div>
             <div>
               <GoLocation size={20} />
@@ -107,7 +118,10 @@ export const Wallet = () => {
               <BiWallet color="white" size={22} />
             </div>
             <div>
-              <SiBigbasket size={20} />
+              
+              <SiBigbasket onClick={()=>navigate("/basket")} size={20} />
+              
+              
             </div>
             <div>
               <MdOutlinePayment size={25} />

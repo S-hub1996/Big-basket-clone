@@ -9,6 +9,26 @@
   text-decoration: none !important;
   color: #202020;
 }
+.iconsdiv>div:hover{
+  opacity: 1;
+background-color: lightgray;
+padding: 5px 0px;
+cursor: pointer;
+}
+.body{
+  margin-bottom: 200px;
+}
+
+
+.home{
+  display: none;
+  position:relative;
+  left:20px;
+  
+}
+.hoverdiv:hover .home{
+  display:block
+}
 
 .walletPath > div {
   display: flex;
