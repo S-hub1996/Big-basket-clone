@@ -6,6 +6,7 @@ We are in Unit-4 from Web-16 Batch students of Masai School
 at the end of unit Masai team is assigned a project and the project is based on the technology we are learned in the whole unit in this project we are used React- Redux and React -Router-Dom.
 
 Let’s take a look of our project : -
+![image](https://user-images.githubusercontent.com/94439105/171357204-0c9e4681-352b-4fc6-b5fa-ff666c5f8f1d.png)
 
 
 Github link: https://github.com/S-hub1996/Big-basket-clone
